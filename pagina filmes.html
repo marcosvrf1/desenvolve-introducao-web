@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria de Filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .movie {
+            width: 200px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .movie img {
+            width: 100%;
+            height: auto;
+        }
+        .movie a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-top: 1px solid #ddd;
+        }
+        .movie a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minha Galeria de Filmes Favoritos</h1>
+    <div class="gallery">
+        <div class="movie">
+            <img src="batman.jpg" alt="Batman: O Cavaleiro das Trevas">
+            <a href="https://pt.wikipedia.org/wiki/Batman:_O_Cavaleiro_das_Trevas" target="_blank">Batman: O Cavaleiro das Trevas</a>
+        </div>
+        <div class="movie">
+            <img src="matrix.jpg" alt="Matrix">
+            <a href="https://pt.wikipedia.org/wiki/Matrix" target="_blank">Matrix</a>
+        </div>
+        <div class="movie">
+            <img src="clube-da-luta.jpg" alt="Clube da Luta">
+            <a href="https://pt.wikipedia.org/wiki/Clube_da_Luta" target="_blank">Clube da Luta</a>
+        </div>
+        <div class="movie">
+            <img src="bastardos-inglorios.jpg" alt="Bastardos Inglórios">
+            <a href="https://pt.wikipedia.org/wiki/Bastardos_Ingl%C3%B3rios" target="_blank">Bastardos Inglórios</a>
+        </div>
+        <div class="movie">
+            <img src="cidade-de-deus.jpg" alt="Cidade de Deus">
+            <a href="https://pt.wikipedia.org/wiki/Cidade_de_Deus" target="_blank">Cidade de Deus</a>
+        </div>
+        <div class="movie">
+            <img src="homem-de-ferro.jpg" alt="Homem de Ferro 1">
+            <a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro_(filme)" target="_blank">Homem de Ferro 1</a>
+        </div>
+    </div>
+
+</body>
+</html>
