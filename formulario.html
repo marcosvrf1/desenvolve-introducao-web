@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+    <h1>Formulário de Pesquisa de Satisfação</h1>
+
+    <form action="processar_formulario.php" method="post">
+        <!-- Seção de Dados Pessoais -->
+        <fieldset>
+            <legend><strong>Dados Pessoais</strong></legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Seção de Pesquisa -->
+        <fieldset>
+            <legend><strong>Pesquisa</strong></legend>
+
+            <p>1. Como você avalia o atendimento recebido?</p>
+            <input type="radio" id="excelente" name="atendimento" value="excelente" required>
+            <label for="excelente">Excelente</label><br>
+
+            <input type="radio" id="bom" name="atendimento" value="bom">
+            <label for="bom">Bom</label><br>
+
+            <input type="radio" id="regular" name="atendimento" value="regular">
+            <label for="regular">Regular</label><br>
+
+            <input type="radio" id="ruim" name="atendimento" value="ruim">
+            <label for="ruim">Ruim</label><br><br>
+
+            <p>2. Você recomendaria nossos serviços?</p>
+            <input type="radio" id="sim" name="recomendaria" value="sim" required>
+            <label for="sim">Sim</label><br>
+
+            <input type="radio" id="nao" name="recomendaria" value="nao">
+            <label for="nao">Não</label><br><br>
+
+            <label for="frequencia">3. Com que frequência você utiliza nossos serviços?</label><br>
+            <select id="frequencia" name="frequencia" required>
+                <option value="">Selecione</option>
+                <option value="frequente">Frequentemente</option>
+                <option value="ocasional">Ocasionalmente</option>
+                <option value="primeira">É minha primeira vez</option>
+            </select><br><br>
+
+            <input type="checkbox" id="autorizacao" name="autorizacao" value="sim">
+            <label for="autorizacao">Autorizo o compartilhamento da minha resposta com terceiros.</label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar Resposta">
+    </form>
+</body>
+</html>
