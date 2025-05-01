@@ -1,0 +1,34 @@
+/* 1. Sobreposição */
+a {
+  color: red; /* Cor padrão vermelha */
+  text-decoration: none; /* Remove sublinhado, opcional */
+}
+
+a:hover {
+  color: lemonchiffon; /* Cor limão ao passar o mouse */
+}
+
+/* 2. Parágrafos */
+p {
+  font-family: Arial, sans-serif; /* Fonte padrão Arial */
+}
+
+/* Parágrafo imediatamente após um h1 */
+h1 + p {
+  font-weight: bold; /* Negrito */
+}
+
+/* 3. Classe */
+.destaque {
+  font-family: Arial, sans-serif; /* Fonte padrão Arial */
+}
+
+/* Se for um parágrafo com a classe .destaque */
+p.destaque {
+  font-weight: bold;
+}
+
+/* Se for um <strong> com a classe .destaque */
+strong.destaque {
+  color: red;
+}
